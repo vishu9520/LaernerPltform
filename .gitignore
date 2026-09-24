@@ -1,0 +1,29 @@
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Environment variables (contains API keys - never commit)
+.env
+.env.local
+.env.production
+
+# Persistence data (auto-generated, contains learner data)
+server/data/store.json
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor files
+.vscode/
+*.swp
+*.swo
+
+# Logs
+*.log
+npm-debug.log*
+
+# Assignment PDF (optional - already in repo as reference)
+# assignment.pdf
