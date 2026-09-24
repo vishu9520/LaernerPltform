@@ -9,8 +9,9 @@ dist/
 .env.local
 .env.production
 
-# Persistence data (auto-generated, contains learner data)
+# Persistence data (auto-generated, contains learner session data)
 server/data/store.json
+server/data/
 
 # OS files
 .DS_Store

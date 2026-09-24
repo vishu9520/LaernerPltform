@@ -1,4 +1,6 @@
 // server/server.js
+require('dotenv').config();  // Load .env file (for local dev and Render env vars)
+
 const express = require('express');
 const cors = require('cors');
 const path = require('path');

@@ -1,0 +1,22 @@
+# render.yaml — Render.com deployment configuration
+# https://render.com/docs/yaml-spec
+
+services:
+  - type: web
+    name: lld-practice-platform
+    runtime: node
+    region: oregon           # or singapore / frankfurt — pick closest to you
+    plan: free               # free tier (spins down after 15min inactivity)
+    rootDir: .
+    buildCommand: npm install && npm run build
+    startCommand: node server/server.js
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: NODE_VERSION
+        value: 20.11.0
+      # Optional: Add your Gemini API key in the Render dashboard
+      # under Environment → Secret Files or Environment Variables
+      # - key: GEMINI_API_KEY
+      #   sync: false        # set manually in Render dashboard

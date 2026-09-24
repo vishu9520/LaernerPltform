@@ -1,19 +1,24 @@
 {
-  "name": "assigment",
+  "name": "lld-practice-platform",
   "version": "1.0.0",
-  "main": "index.js",
+  "description": "AI-powered Low-Level Design practice platform with rubric-driven evaluation",
+  "main": "server/server.js",
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:prod": "npm install && vite build",
     "server": "node server/server.js",
     "start": "node server/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["lld", "system-design", "practice", "ai-evaluation"],
+  "author": "Vishu Vatsay",
   "license": "ISC",
   "type": "commonjs",
-  "description": "",
   "dependencies": {
     "cors": "^2.8.6",
     "dotenv": "^18.0.3",
